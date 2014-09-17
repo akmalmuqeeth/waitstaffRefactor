@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html ng-app='calcApp'>
+<head>
+	<meta charset="UTF-8">
+	<title>Calculator App</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/app.css">
+	<script src="js/bower_components/angular/angular.js"></script>
+	<script src="js/bower_components/angular-route/angular-route.js"></script>
+	<script src="js/app.js"></script>
+</head>
+<body ng-controller="calcController">
+		
+	<div class="title">
+		{{title}}
+
+	</div>
+	<div class="container">
+				<a href="#/home">Home</a>
+				<a href="#/newMeal">New Meal</a>
+				<a href="#/earnings">My Earnings</a>
+				<div ng-view></div>
+		
+			 <!-- <div class="left">
+				<div class="sectionTitle">Enter the Meal Details</div>
+				<form name="calcForm"ng-submit="calculate()">
+					<div class="inputDiv">Base meal price: <input name="baseMeal" type="number" step="0.01" ng-model="baseMealPrice" required></div>
+					
+					<span ng-show="calcForm.baseMeal.$error.required" class="invalid">Enter a base meal price.</span>
+					<div class="inputDiv">Tax Rate: %<input name="tax" type="number" ng-model="taxRate" required></div>
+					<span ng-show="calcForm.tax.$error.required" class="invalid">Enter the tax percentage.</span>	
+					<div class="inputDiv">Tip Percentage: %<input name="tip" type="number" ng-model="tipPercentage" required></div>
+					<span ng-show="calcForm.tip.$error.required" class="invalid">Enter the tip percentage.</span>
+					<button class="buttons" ng-disabled="calcForm.$invalid">Submit</button>
+				</form>
+
+
+			 </div>
+			 <div class="middle">
+			 	<div class="sectionTitle">Customer charges</div>
+			 	<div class="inputDiv">Subtotal: {{subtotal | currency}}</div>
+			 	<div class="inputDiv">Tip: {{tip | currency}}</div>
+			 	<div class="inputDiv">Total: {{customerTotal| currency}}</div>
+			 	
+			 </div>
+			 <div class="right">
+			 	<div class="sectionTitle">My Earnings Info</div>
+			 	<div class="inputDiv">Tip Total: {{tipTotal | currency}}</div>
+			 	<div class="inputDiv">Meal Count:{{mealCount}}</div>
+			 	<div class="inputDiv">Average Tip Per Meal: {{averageTip | currency}}</div>
+
+			 	<button class="buttons" ng-click="reset()">Reset</button>
+
+			 </div> -->
+	 		
+	
+		
+	</div> <!-- end of controller -->
+</body>
+</html>

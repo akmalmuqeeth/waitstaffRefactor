@@ -1,0 +1,25 @@
+<h2>New Meal</h2>
+
+<div class="left">
+				<div class="sectionTitle">Enter the Meal Details</div>
+				<form name="calcForm"ng-submit="calculate()">
+					<div class="inputDiv">Base meal price: <input name="baseMeal" type="number" step="0.01" ng-model="baseMealPrice" required></div>
+					
+					<span ng-show="calcForm.baseMeal.$error.required" class="invalid">Enter a base meal price.</span>
+					<div class="inputDiv">Tax Rate: %<input name="tax" type="number" ng-model="taxRate" required></div>
+					<span ng-show="calcForm.tax.$error.required" class="invalid">Enter the tax percentage.</span>	
+					<div class="inputDiv">Tip Percentage: %<input name="tip" type="number" ng-model="tipPercentage" required></div>
+					<span ng-show="calcForm.tip.$error.required" class="invalid">Enter the tip percentage.</span>
+					<button class="buttons" ng-disabled="calcForm.$invalid">Submit</button>
+				</form>
+
+
+			 </div>
+			 <div class="middle">
+			 	<div class="sectionTitle">Customer charges</div>
+			 	<div class="inputDiv">Subtotal: {{subtotal | currency}}</div>
+			 	<div class="inputDiv">Tip: {{tip | currency}}</div>
+			 	<div class="inputDiv">Total: {{customerTotal| currency}}</div>
+			 	
+			 </div>
+			 

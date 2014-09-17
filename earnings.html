@@ -1,0 +1,11 @@
+<h2>My Earnings</h2>
+
+<div class="right">
+			 	<div class="sectionTitle">My Earnings Info</div>
+			 	<div class="inputDiv">Tip Total: {{earnings.tipTotal | currency}}</div>
+			 	<div class="inputDiv">Meal Count:{{ earnings.mealCount}}</div>
+			 	<div class="inputDiv">Average Tip Per Meal: {{ earnings.averageTip | currency}}</div>
+
+			 	<button class="buttons" ng-click="reset()">Reset</button>
+
+			 </div>

@@ -1,0 +1,63 @@
+.container {
+	width: 600px;
+	height: 400px;
+	margin: 40px auto 0px auto;
+	border: 1px solid black;
+}
+
+.left{
+	float: left;
+width: 293px;
+height: 400px;
+border: 1px solid black;
+}
+
+.right {
+	float: right;
+width: 303px;
+height: 197px;
+border: 1px solid red;
+}
+
+.middle {
+	float: left;
+width: 303px;
+height: 200px;
+border: 1px solid green;
+}
+
+.sectionTitle{
+	font-size: 23px;
+margin-left: 49px;
+margin-top: 12px;
+margin-bottom: 12px;
+}
+
+input.ng-invalid {
+  border: 1px solid red;
+}
+input.ng-valid {
+  border: 1px solid black;
+}
+
+.inputDiv{
+	margin: 10px;
+}
+span.invalid{
+	color: red;
+	margin: 10px;
+}
+
+.title{
+	font-size: 53px;
+text-align: center;
+margin-top: 20px;
+}
+
+.buttons{
+	width: 100px;
+	height: 27px;
+	float: right;
+	margin-right: 28px;
+	margin-top: 20px;
+}
